@@ -39,7 +39,12 @@
 
 </head>
 <style>
+    
+    
 
+
+
+    
     body {
         overflow-x: hidden !important;
     }
@@ -174,7 +179,14 @@
     font-weight: 200;
 }
 	
-
+.banner img {
+    width: 100%;
+	position: fixed;
+    left: 0px;
+    position: absolute;
+    z-index: -1;
+    /*opacity: 0.6;*/
+}
  </style>
 
 
@@ -182,12 +194,12 @@
 
 
 <script>
-   //<![CDATA[
+  /* //<![CDATA[
         $(window).load(function() { // makes sure the whole site is loaded
             $('#status').fadeOut(); // will first fade out the loading animation
             $('#preloader').delay(350).fadeOut('slow'); // will fade out the white DIV that covers the website.
             $('body').delay(30000).css({'overflow':'visible'});
-        });
+        });*/
     
  
 </script>
@@ -195,9 +207,7 @@
 
 
 <body id="page-top" class="index" >
-<div id="preloader">
-    <div id="status">&nbsp;</div>
-</div>
+
   
   
    
@@ -227,7 +237,7 @@
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                     <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
                 </button>
-                <a class="navbar-brand"  href="index.html" >TASK MANAGER</a>
+                <a class="navbar-brand"  href="" >TASK MANAGER</a>
             </div>
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-left">
@@ -235,10 +245,9 @@
                   </ul>
                  <ul class="nav navbar-nav navbar-right" id="bs-example-navbar-collapse-1">
                     <li class="page-scroll">
-                    <a href="login1.html" class="btn btn-primary btn-lg">SIGN IN !</a>
-              <!--<a href="login.html" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal" >
+              <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
   
-         SIGN IN !</a>-->
+         SIGN IN !</button>
                     </li>
                     <li class="page-scroll">
                         <a href="features.html">FEATURES</a>
@@ -260,22 +269,34 @@
     
     </nav>
     
-    
       
    
  <header>
         <div class="container">
             <div class="row">
-                <div class="col-lg-12 imagesize">
-                <div class="jumbotron jumbotron-fluid">
-                <img class="" src="Images/new.jpg" alt="banner">
+                <div class="col-lg-12 banner">
+              
+       <img  src="images/new.jpg" alt="banner">
   
-   <hr class="my-2">
-  <p>Your LightWeight Task Manager</p>
-  <p class="lead">
-    <a class="btn btn-primary btn-lg" href="login.html" role="button">Learn more</a>
-  </p>
-    					</div>
+    <main class="mainpart">
+         <article>
+			<h1 class="abc1">About us</h1>
+			<hr>
+			<div class="abc">
+      At TASK MANAGER, our vision is to be Earth's most customer centric company; to build a place where people can come to find and discover virtually anything they want to buy online. With TASK MANAGER.in, we endeavor to build that same destination in India by giving customers more of what they want – vast selection, low prices, fast and reliable delivery, and a trusted and convenient online shopping experience – and provide sellers a world-class e-commerce platform. We are committed to ensure 100% Purchase Protection for your shopping done on TASK MANAGER.in so that you can benefit from a safe and secure online ordering experience, convenient payment options such as cash on delivery, easy returns and enjoy a completely hassle free online shopping experience. 
+
+
+We launched with Books and Movies & TV shows and have expanded our offerings to include the Kindle family of E-Readers, the TASK MANAGER Fashion Store and various products under different categories. Customers can now buy products from popular brands across categories such as Samsung mobiles, Dell laptops, Canon cameras, Fastrack watches and many more at TASK MANAGER.in. Don’t forget to check out the TASK MANAGER Exclusives Store and also, shop for Today's Deals on TASK MANAGER and save big every day. On TASK MANAGER, shopping is not only about buying, it's also about gifting and through Gift a Smile you can give products online to charity through verified NGOs. 
+
+
+Customers can also shop our full selection of products using the TASK MANAGER App for Android, iOS and Windows which offers customers a convenient, fast and secure way to search, browse, compare offers, and shop online quickly and easily, at anytime from anywhere. 
+
+
+It is still “Day 1” and we continue to relentlessly focus on using our investments in technology and innovation to transform the lives of our customers and all our partners. We strive to transform the way India shops and the way India sells. 
+</div>
+            
+		</article>
+    </main>
                     </div>
                 </div>
             </div>

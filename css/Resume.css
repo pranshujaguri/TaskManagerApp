@@ -100,7 +100,6 @@ header {
 }
 header .container {
   padding-top: 100px;
-	margin-bottom: 13%;
   padding-bottom: 50px;
 }
 
@@ -326,14 +325,25 @@ section.success {
 .floating-label-form-group-with-focus label {
   color: #18BC9C;
 }
-
+#foot {
+	margin-top: 620px;
+	/*margin-top:  542px;*/
+}
+#foot1 {
+	
+	margin-top:  650px;
+}
 footer {
+	    
+
   color: white;
 }
 footer h3 {
   margin-bottom: 30px;
 }
 footer .footer-above {
+	
+
   padding-top: 50px;
   background-color: #2C3E50;
 }
